@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+	<button onclick="redirectToPage5()">订阅链接</button>
+	<button onclick="redirectToPage4()">查看节点链接</button>
+	<button onclick="redirectToPage2()">添加节点</button>
+	<button onclick="redirectToPage1()">查看数据库列表</button>
+	<button onclick="redirectToPage3()">添加数据库列表</button>
+	
+	<div>还未实现功能：<br>
+	1、分数据库添加链接<br>
+	2、
+	
+	</div>
+	<script>
+    function redirectToPage2() {
+        // 使用相对路径进行页面跳转
+        window.location.href = 'page2.html';
+    }
+	function redirectToPage1() {
+        // 使用相对路径进行页面跳转
+        window.location.href = 'dbview.php';
+    }
+	function redirectToPage3() {
+        // 使用相对路径进行页面跳转
+        window.location.href = 'dbadd.html';
+    }
+	function redirectToPage4() {
+        // 使用相对路径进行页面跳转
+        window.location.href = 'urlview.php';
+    }
+	function redirectToPage5() {
+        // 使用相对路径进行页面跳转
+        window.location.href = 'sub.php';
+    }
+</script>
+</body>
+</html>
