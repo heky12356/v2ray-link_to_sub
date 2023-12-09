@@ -1,0 +1,2 @@
+# v2ray-link_to_sub
+一个简单的节点链接转化成订阅工具，用到sqlite数据库，可以在线添加节点，虽然叫做v2ray-link_to_sub，但本质上是读取数据库里面的节点然后一键转换成base64，所以理论上其他的协议例如tuic或者hysteria也可以用
