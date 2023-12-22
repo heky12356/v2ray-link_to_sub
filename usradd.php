@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 使用 $_POST 获取表单数据
     $usr = $_POST["usr"];
     $psw = $_POST["psw"];
-    $hashedusr = password_hash($usr, PASSWORD_DEFAULT);
+    
     $hashedpsw = password_hash($psw, PASSWORD_DEFAULT);
 
     // 保存到数据库
@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt = $pdo->prepare("INSERT INTO users (usr, psw) VALUES (?, ?)");
 
         // 绑定参数
-        $stmt->bindParam(1, $hashedusr);
+        $stmt->bindParam(1, $usr);
         $stmt->bindParam(2, $hashedpsw);
 
         // 执行预处理语句
