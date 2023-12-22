@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<form action="usradd.php" method="post">
+    <label for="usr">usr:</label>
+    <input type="text" id="usr" name="usr">
+    <br>
+	<label for="psw">psw:</label>
+    <input type="text" id="psw" name="psw">
+    <br>
+    <input type="submit" value="提交">
+	
+</form>
+<button onclick="redirectToPage1()">返回</button>
+<script>
+    function redirectToPage1() {
+        // 使用相对路径进行页面跳转
+        window.location.href = 'index.html';
+    }
+</script>
+</body>
+</html>

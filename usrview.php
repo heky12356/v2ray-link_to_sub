@@ -6,7 +6,7 @@ session_start();
 $isLoggedIn = isset($_SESSION['user']) && $_SESSION['user'] === 'admin';
 
 // SQLite数据库文件路径
-$dbFile = 'db/wky.db';
+$dbFile = 'db/usrdb.db';
 
 try {
     // 尝试连接到数据库，如果不存在则创建
@@ -43,9 +43,9 @@ try {
     <table border="1">
 	<?php
 	if ($isLoggedIn) {
-		echo "<tr><th>Select</th><th>ID</th><th>url</th></tr>";
+		echo "<tr><th>Select</th><th>ID</th><th>usr</th><th>psw</th></tr>";
 	} else {
-		echo"<tr><th>ID</th><th>url</th></tr>";
+		echo"<tr><th>ID</th><th>usr</th><th>psw</th></tr>";
 	}
         
 
@@ -61,7 +61,8 @@ try {
 
     // 共同显示的列
     echo '<td>' . $row['id'] . '</td>';
-    echo '<td>' . $row['url'] . '</td>';
+    echo '<td>' . $row['usr'] . '</td>';
+	echo '<td>' . $row['psw'] . '</td>';
 
     // 如果用户已经登录并且是管理员，可能还有其他需要显示的列
 
