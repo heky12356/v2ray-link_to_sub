@@ -9,7 +9,7 @@
 $createTableQuery = "
 CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    usr TEXT NOT NULL,
+    usr TEXT UNIQUE NOT NULL,
 	psw TEXT NOT NULL
 )";
 
