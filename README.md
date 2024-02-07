@@ -4,7 +4,7 @@
 
 ### 功能介绍：
 
-![image-20231209185312122](https://pan.heky.tk/d/博客图片/image-20231209185312122.png)
+![image-20231209185312122](https://pan.heky.top/d/博客图片/image-20231209185312122.png)
 
 1. 订阅链接：点进去就是转换好的base64字符串，可以直接把网址复制下来，到nekobox还是v2rayn之类的软件里用
 2. 产看节点链接：点进去可以看有多少个节点和哪些节点被加进去，现在只能看链接，以后可能会做查看名字和复制链接的功能
@@ -14,9 +14,9 @@
 
 ### 演示网址：
 
-https://sub.heky.tk/
+https://sub.heky.top/
 
-> 订阅链接：https://sub.heky.tk/sub.php
+> 订阅链接：https://sub.heky.top/sub.php
 
 ### 使用须知：
 
