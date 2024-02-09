@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
                 $_SESSION['user'] = $user['usr'];
                 $_SESSION['user_id'] = $user['id'];
                 // 跳转
-                header('Location: urlview.php');
+                header('Location: urlviewpre.php');
             } else {
                 echo "用户名或密码错误！"; // 不提供具体信息
             }

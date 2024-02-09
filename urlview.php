@@ -6,7 +6,6 @@ global $db;
 $isLoggedIn = isset($_SESSION['user']) && $_SESSION['user'] === 'admin';
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['urlview'])) {
     $db = $_POST['db'];
-    
 }
 
 // SQLite数据库文件路径
@@ -43,7 +42,7 @@ try {
 </head>
 <body>
 
-<form action="" method="post">
+<form action="delurl.php" method="post">
     <table border="1">
 	<?php
     
@@ -77,42 +76,16 @@ try {
     </table>
 
     <?php 
+    global $db;
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['urlview'])) {
+        $db = $_POST['db'];
+    }
 	if ($isLoggedIn) {
-		echo '<br><input type="submit" name="delete" value="删除">';
+		echo '<br><button type="submit" name="delete" value="' . $db . '">删除</button>';
 	}
 	?>
 </form>
 
-<?php
-// 处理删除操作
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete'])) {
-    if (isset($_POST['selectedRows']) && is_array($_POST['selectedRows'])) {
-        // 删除选定的行
-        foreach ($_POST['selectedRows'] as $selectedId) {
-            $deleteQuery = "DELETE FROM users WHERE id = :id";
-            $deleteStatement = $db->prepare($deleteQuery);
-
-            if (!$deleteStatement) {
-                throw new Exception("无法准备删除语句");
-            }
-
-            $deleteStatement->bindValue(':id', $selectedId, SQLITE3_INTEGER);
-            $deleteResult = $deleteStatement->execute();
-
-            if (!$deleteResult) {
-                throw new Exception("执行删除语句失败");
-            }
-        }
-
-        // 重新加载页面以显示更新后的数据
-        header('Location: ' . $_SERVER['PHP_SELF']);
-        exit();
-    }
-}
-
-// 关闭数据库连接
-$db->close();
-?>
 <button onclick="redirectToPage1()">返回</button>
 <script>
     function redirectToPage1() {
