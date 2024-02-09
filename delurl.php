@@ -26,8 +26,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete'])) {
                 if (!$deleteResult) {
                     throw new Exception("执行删除语句失败");
                 }
-                echo "删除成功！";
+                
             }
+            echo "删除成功！";
         } catch (PDOException $e) {
             echo "错误: " . $e->getMessage();
         } finally {
