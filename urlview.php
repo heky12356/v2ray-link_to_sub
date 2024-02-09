@@ -1,12 +1,16 @@
 <?php
 // 启动会话
 session_start();
-
+global $db;
 // 检查用户是否已经登录
 $isLoggedIn = isset($_SESSION['user']) && $_SESSION['user'] === 'admin';
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['urlview'])) {
+    $db = $_POST['db'];
+    
+}
 
 // SQLite数据库文件路径
-$dbFile = 'db/wky.db';
+$dbFile = 'db/' . $db . '.db';
 
 try {
     // 尝试连接到数据库，如果不存在则创建
@@ -42,6 +46,7 @@ try {
 <form action="" method="post">
     <table border="1">
 	<?php
+    
 	if ($isLoggedIn) {
 		echo "<tr><th>Select</th><th>ID</th><th>url</th></tr>";
 	} else {

@@ -3,11 +3,12 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 使用 $_POST 获取表单数据
     $url = $_POST["url"];
+    $db = $_POST["db"];
 
     // 保存到数据库
 try {
     // 连接到 SQLite 数据库（SQLite 数据库文件路径）
-    $pdo = new PDO('sqlite:db/wky.db');
+    $pdo = new PDO('sqlite:db/' . $db . '.db');
 
     // 设置 PDO 错误模式为异常
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
