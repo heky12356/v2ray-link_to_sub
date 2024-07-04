@@ -4,7 +4,7 @@ session_start();
 // 检查用户是否已经登录
 $isLoggedIn = isset($_SESSION['user']) && $_SESSION['user'] === 'admin';
 // SQLite数据库文件路径
-$dbFile = 'db/otherurl.db';
+$dbFile = '../../db/otherurl.db';
 
 try {
     // 尝试连接到数据库，如果不存在则创建

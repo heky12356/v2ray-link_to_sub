@@ -11,7 +11,7 @@
 <select name="db">
             <?php
             // 指定要查看的目录
-            $directory = 'db/';
+            $directory = '../../db/';
 
             // 使用 scandir 获取目录中的文件列表
             $files = scandir($directory);

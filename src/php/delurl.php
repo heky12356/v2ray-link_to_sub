@@ -2,7 +2,7 @@
 // 处理删除操作
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete'])) {
     if (isset($_POST['selectedRows']) && is_array($_POST['selectedRows'])) {
-        $dbPath = 'db/' . $_POST['delete'] . '.db'; // 数据库文件路径
+        $dbPath = '../../db/' . $_POST['delete'] . '.db'; // 数据库文件路径
 
         try {
             // 连接到 SQLite 数据库

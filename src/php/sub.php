@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['sub'])) {
     
 }
 // SQLite数据库文件路径
-$dbFile = 'db/' . $db . '.db';
+$dbFile = '../../db/' . $db . '.db';
 
 // 尝试连接到数据库，如果不存在则创建
 $db = new SQLite3($dbFile);

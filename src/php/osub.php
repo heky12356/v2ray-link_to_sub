@@ -4,7 +4,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     
     $db = 'otherurl';
     // SQLite数据库文件路径
-    $dbFile = 'db/' . $db . '.db';
+    $dbFile = '../../db/' . $db . '.db';
 
     try {
         // 尝试连接到数据库，如果不存在则创建

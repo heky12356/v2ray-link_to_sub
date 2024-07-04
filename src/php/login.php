@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
 
     try {
         // 连接到数据库，检索用户信息
-        $pdo = new PDO('sqlite:db/usrdb.db');
+        $pdo = new PDO('sqlite:../../db/usrdb.db');
 
         // 设置 PDO 错误模式为异常
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
