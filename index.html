@@ -3,56 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./src/js/jump.js"></script>
     <title>index</title>
 </head>
 <body>
-	<button onclick="redirectToPage5()">订阅链接</button>
-	<button onclick="redirectToPage4()">查看节点链接</button>
-	<button onclick="redirectToPage2()">添加节点</button>
-    <button onclick="redirectToPage7()">添加外源节点订阅</button>
-    <button onclick="redirectToPage8()">查看外源节点订阅列表</button>
-	<button onclick="redirectToPage1()">查看数据库列表</button>
-	<button onclick="redirectToPage3()">添加数据库</button>
-	<button onclick="redirectToPage6()">添加账户</button>
+	<button onclick="redirectToPage('page5')">订阅链接</button>
+	<button onclick="redirectToPage('page4')">查看节点链接</button>
+	<button onclick="redirectToPage('page2')">添加节点</button>
+    <button onclick="redirectToPage('page7')">添加外源节点订阅</button>
+    <button onclick="redirectToPage('page8')">查看外源节点订阅列表</button>
+	<button onclick="redirectToPage('page1')">查看数据库列表</button>
+	<button onclick="redirectToPage('page3')">添加数据库</button>
+	<button onclick="redirectToPage('page6')">添加账户</button>
 	
 	<div>还未实现功能：<br>
 	1、在游客状态下隐藏数据库<br>
 	2、
 	
 	</div>
-	<script>
-    function redirectToPage2() {
-        // 使用相对路径进行页面跳转
-        window.location.href = 'enurldex.php';
-    }
-	function redirectToPage1() {
-        // 使用相对路径进行页面跳转
-        window.location.href = 'dbview.php';
-    }
-	function redirectToPage3() {
-        // 使用相对路径进行页面跳转
-        window.location.href = 'dbadd.html';
-    }
-	function redirectToPage4() {
-        // 使用相对路径进行页面跳转
-        window.location.href = 'urlviewpre.php';
-    }
-	function redirectToPage5() {
-        // 使用相对路径进行页面跳转
-        window.location.href = 'sub.html';
-    }
-	function redirectToPage6() {
-        // 使用相对路径进行页面跳转
-        window.location.href = 'usradd.html';
-    }
-    function redirectToPage7() {
-        // 使用相对路径进行页面跳转
-        window.location.href = 'otherurl.html';
-    }
-    function redirectToPage8() {
-        // 使用相对路径进行页面跳转
-        window.location.href = 'ourlview.php';
-    }
-</script>
+	
 </body>
 </html>
