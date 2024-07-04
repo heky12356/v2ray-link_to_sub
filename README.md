@@ -17,7 +17,7 @@ https://sub.heky.top/
 
 ![image-20240704151735405](https://pan.heky.top/d/博客图片/image-20240704151735405.png)
 
-> 订阅链接：https://sub.heky.top/sub.php?db=wky&sub=
+> 订阅链接：https://sub.heky.top/src/php/sub.php?db=wky&sub=
 
 ### 使用须知：
 
