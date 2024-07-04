@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* 设置字体 */
+    background-image: url('../../source/1b87e2c5880511ebb6edd017c2d2eca2.png'); /* 背景图片路径 */
+    background-size: cover; /* 背景图片铺满整个屏幕 */
+    background-position: center; /* 居中显示背景图片 */
+    height: 100vh; /* 让背景图片充满整个视口高度 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ /* 扁平化风格按钮的基本样式 */
+ button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent; /* 按钮背景颜色 */
+    color: #333333; /* 按钮文字颜色 */
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px; /* 圆角 */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* 按钮背景颜色过渡效果 */
+}
+
+/* styles.css */
+
+.button-container {
+    display: flex; /* 使用 Flexbox 布局 */
+    flex-direction: column; /* 竖直排列按钮组 */
+    justify-content: center; /* 垂直居中按钮组 */
+    width: 100%; /* 宽度占满父容器 */
+    max-width: 800px; /* 最大宽度 */
+    padding: 20px; /* 内边距 */
+    background-color: rgba(255, 255, 255, 0.3); /* 半透明白色背景 */
+    border-radius: 8px; /*圆角*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+}
+.button-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+
+.button-group button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #685e5e;
+    border-bottom: 2px solid #fff; /* 只设置下边框 */
+    cursor: pointer;
+    border-radius: 0;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.button-group button:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* 悬停时的背景色，半透明白色 */
+    color: #000; /* 悬停时的文字颜色 */
+    border-bottom-color: rgba(255, 255, 255, 0); /* 悬停时取消下边框 */
+}

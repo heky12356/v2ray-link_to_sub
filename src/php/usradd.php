@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             echo "数据插入失败，请稍后再试。";
             // 在开发环境中可以输出详细的错误信息
-            // echo "错误: " . $e->getMessage();
+             echo "错误: " . $e->getMessage();
         }
     }
 

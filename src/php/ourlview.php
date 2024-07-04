@@ -33,6 +33,7 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css" />
     <title>urlview</title>
 </head>
 <body>
@@ -83,14 +84,14 @@ try {
 <script>
     function redirectToPage1() {
         // 使用相对路径进行页面跳转
-        window.location.href = 'index.html';
+        window.location.href = '../../index.html';
     }
 </script>
 <button onclick="redirectToPage2()">登录</button>
 <script>
     function redirectToPage2() {
         // 使用相对路径进行页面跳转
-        window.location.href = 'login.html';
+        window.location.href = '../html/login.html';
     }
 </script>
 </body>

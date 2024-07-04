@@ -4,23 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./src/js/jump.js"></script>
+	<link rel="stylesheet" href="./src/css/main.css" />
     <title>index</title>
 </head>
 <body>
-	<button onclick="redirectToPage('page5')">订阅链接</button>
-	<button onclick="redirectToPage('page4')">查看节点链接</button>
-	<button onclick="redirectToPage('page2')">添加节点</button>
-    <button onclick="redirectToPage('page7')">添加外源节点订阅</button>
-    <button onclick="redirectToPage('page8')">查看外源节点订阅列表</button>
-	<button onclick="redirectToPage('page1')">查看数据库列表</button>
-	<button onclick="redirectToPage('page3')">添加数据库</button>
-	<button onclick="redirectToPage('page6')">添加账户</button>
+
+	<div class="button-container">
+		<div class="button-group">
+			<button   onclick="redirectToPage('page5')" >订阅链接</button>
+		</div>
 	
-	<div>还未实现功能：<br>
-	1、在游客状态下隐藏数据库<br>
-	2、
+		<div class="button-group">
+			<button onclick="redirectToPage('page4')">查看节点链接</button>
+			<button onclick="redirectToPage('page1')">查看数据库列表</button>
+			<button onclick="redirectToPage('page8')">查看外源节点订阅列表</button>
 	
+		</div>
+	
+		<div class="button-group">
+			<button onclick="redirectToPage('page2')">添加节点</button>
+			<button onclick="redirectToPage('page7')">添加外源节点订阅</button>
+			<button onclick="redirectToPage('page3')">添加数据库</button>
+			<button onclick="redirectToPage('page6')">添加账户</button>
+		</div>
 	</div>
+	
 	
 </body>
 </html>

@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css" />
     <title>index</title>
 </head>
 <body>
-	<button onclick="redirectToPage2()">服务器节点</button>
-	<button onclick="redirectToPage1()">外源订阅</button>
+    <div class="button-container">
+        <div class="button-group">
+            <button onclick="redirectToPage2()">服务器节点</button>
+	        <button onclick="redirectToPage1()">外源订阅</button>
+        </div>
+    </div>
 	
-	<div>还未实现功能：<br>
-	1、在游客状态下隐藏数据库<br>
-	2、
 	
-	</div>
 	<script>
     function redirectToPage2() {
         // 使用相对路径进行页面跳转
