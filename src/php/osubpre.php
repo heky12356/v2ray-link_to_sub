@@ -50,7 +50,7 @@
     $name = $_POST['ourl'];
     // 获取当前请求的 URI
     $currentUrl = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] ;
-    $rurl = $currentUrl . "/osub.php?ourl=$name&osub=";
+    $rurl = $currentUrl . "/src/php/osub.php?ourl=$name&osub=";
     echo "<a href = '$rurl'>订阅链接：$rurl</a>";
     }
     ?>
